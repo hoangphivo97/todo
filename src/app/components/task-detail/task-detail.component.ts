@@ -10,6 +10,7 @@ import {Task} from '../../Task';
   styleUrls: ['./task-detail.component.css']
 })
 export class TaskDetailComponent implements OnInit {
+  tasks: Task[] = [];
   task:Task|undefined;
   text!:string;
   day!:string;
@@ -37,7 +38,12 @@ export class TaskDetailComponent implements OnInit {
   onSave(): void {
     if (this.task) {
       this.taskService.updateTask(this.task)
-        .subscribe(()=>this.goBack());
+        .subscribe(()=>{
+          alert("Update Success")
+          window.location.reload();
+          
+        });
+        
         
     }
   }
