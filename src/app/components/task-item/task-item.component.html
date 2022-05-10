@@ -1,0 +1,22 @@
+<div
+  [ngStyle]="{'user-select':'none'}"
+  class="task"
+>
+  <h3>
+    {{ task.todo }}
+    <fa-icon
+      (click)="onDelete(task)"
+      [ngStyle]="{ 'color': 'red' }"
+      [icon]="faTimes"
+    ></fa-icon>
+  </h3>
+  <p>{{ task.day }}
+    <fa-icon
+    routerLink="/detail/{{task.id}}"
+    routerLinkActive="active "
+    [icon]="faPencil">
+      
+    </fa-icon>
+  </p>
+  
+</div>

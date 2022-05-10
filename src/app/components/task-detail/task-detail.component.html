@@ -1,0 +1,41 @@
+<!-- <div *ngIf="task">
+  <h2>{{task.todo| uppercase}}</h2>
+  <div>
+      <span>id:</span>
+      {{task.id}}
+  </div>
+  <div>
+      <label for="task">Task:</label>
+      <input id="task" [(ngModel)]="task.todo" placeholder="Task name"/>
+  </div>
+  <div>
+    <label for="task">Day:</label>
+    <input id="task" [(ngModel)]="task.day" placeholder="Day"/>
+</div>
+  <button class="btn" type="button" (click)="goBack()">Back</button>
+  <button class="btn" type="button" (click)="save()">Save</button>
+</div> -->
+<form *ngIf="task" class="add-form" (ngSubmit)="onSave()">
+  <div class="form-control">
+    <label for="text">Task</label>
+    <input
+      type="text"
+      name="text"
+      [(ngModel)]="task.todo"
+      id="text"
+      placeholder="Add Task"
+    />
+  </div>
+  <div class="form-control">
+    <label for="day">Day & Time</label>
+    <input
+      type="text"
+      name="day"
+      [(ngModel)]="task.day"
+      id="day"
+      placeholder="Add Day & Time"
+    />
+  </div>
+  <button class="btn" type="button" (click)="goBack()">Back</button>
+  <button class="btn" type="submit" >Save</button>
+</form>

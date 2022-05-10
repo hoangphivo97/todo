@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "todo": "Buying some gun",
+      "day": "15 Feb"
+    },
+    {
+      "id": "2",
+      "todo": "Playing games",
+      "day": "12 May"
+    },
+    {
+      "id": "3",
+      "todo": "Take a shower",
+      "day": "1 May"
+    },
+    {
+      "id": "4",
+      "todo": "Visit mom",
+      "day": "15 May"
+    },
+    {
+      "id": "5",
+      "todo": "Buy fruits",
+      "day": "19 May"
+    },
+    {
+      "todo": "Working",
+      "day": "5 June",
+      "id": "6"
+    }
+  ]
+}
