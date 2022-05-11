@@ -40,7 +40,6 @@ export class TaskDetailComponent implements OnInit {
       this.taskService.updateTask(this.task)
         .subscribe(()=>{
           alert("Update Success")
-          window.location.reload()
         });
         
         
